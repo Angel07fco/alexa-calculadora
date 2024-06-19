@@ -1,0 +1,483 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "calculadora universidad",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "como uso la skill",
+                        "como usar",
+                        "qué hace esta skill",
+                        "ayuda"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "adiós",
+                        "cerrar",
+                        "cierra calculadora universidad",
+                        "cierra la skill"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SumaIntent",
+                    "slots": [
+                        {
+                            "name": "numeroUno",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "numeroDos",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "cual es la suma  de {numeroUno} y {numeroDos}",
+                        "cuanto es {numeroUno} mas {numeroDos}",
+                        "suma {numeroUno} y {numeroDos}"
+                    ]
+                },
+                {
+                    "name": "RestaIntent",
+                    "slots": [
+                        {
+                            "name": "numeroUno",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "numeroDos",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "a {numeroUno} restale {numeroDos}",
+                        "resta {numeroDos} de {numeroUno}",
+                        "cuánto es {numeroUno} menos {numeroDos}"
+                    ]
+                },
+                {
+                    "name": "MultiplicacionIntent",
+                    "slots": [
+                        {
+                            "name": "numeroUno",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "numeroDos",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "a {numeroUno} multiplicale {numeroDos}",
+                        "multiplica {numeroUno} por {numeroDos}",
+                        "cuánto es {numeroUno} por {numeroDos}"
+                    ]
+                },
+                {
+                    "name": "DivisionIntent",
+                    "slots": [
+                        {
+                            "name": "numeroUno",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "numeroDos",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "cuál es el cociente de {numeroUno} y {numeroDos}",
+                        "divide {numeroUno} entre {numeroDos}",
+                        "cuánto es {numeroUno} dividido entre {numeroDos}"
+                    ]
+                },
+                {
+                    "name": "PotenciaIntent",
+                    "slots": [
+                        {
+                            "name": "base",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "exponente",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Cuál es el resultado de {base} a la {exponente}",
+                        "Calcula {base} a la {exponente} potencia",
+                        "Cuánto es {base} elevado a la {exponente}"
+                    ]
+                },
+                {
+                    "name": "LogaritmoIntent",
+                    "slots": [
+                        {
+                            "name": "numero",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "logaritmo natural de {numero}",
+                        "calcula el logaritmo natural de {numero}"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "SumaIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "numeroUno",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.994032824206.791226893122"
+                            }
+                        },
+                        {
+                            "name": "numeroDos",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.994032824206.1401833829509"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "RestaIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "numeroUno",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1156298850358.893349964268"
+                            }
+                        },
+                        {
+                            "name": "numeroDos",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1156298850358.1511867765222"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "MultiplicacionIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "numeroUno",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.428752748118.157136467449"
+                            }
+                        },
+                        {
+                            "name": "numeroDos",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.428752748118.457598976980"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "DivisionIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "numeroUno",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.883608416756.333202552654"
+                            }
+                        },
+                        {
+                            "name": "numeroDos",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.883608416756.161644015290"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "PotenciaIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "base",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.320446398650.1429599048326"
+                            }
+                        },
+                        {
+                            "name": "exponente",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.320446398650.1103889970872"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LogaritmoIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "numero",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1078468102798.1350648669685"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.994032824206.791226893122",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Qué número quieres sumar primero?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Dime el primer número"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿Cuál es el primer número que deseas sumar?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.994032824206.1401833829509",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Qué número quieres sumar al primero?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Dime el segundo número"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿Cuál es el segundo número que deseas sumar?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1156298850358.893349964268",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Cuál es el número inicial para la resta?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Dime el número del cual quieres restar"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿De qué número quieres restar?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1156298850358.1511867765222",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Qué cantidad quieres restar?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Dime el número que quieres restar"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿Qué número deseas restar?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.428752748118.157136467449",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Qué número quieres multiplicar primero?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Dime el primer número para la multiplicación"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿Cuál es el primer número que deseas multiplicar?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.428752748118.457598976980",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Qué número quieres multiplicar con el primero?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Dime el segundo número"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿Cuál es el segundo número que deseas multiplicar?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.883608416756.333202552654",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Cuál es el dividendo?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Dime el número que se va a dividir"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿Cuál es el número que deseas dividir?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.883608416756.161644015290",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Dime el divisor"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿Por qué número quieres dividir?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿Entre qué número deseas dividir?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.320446398650.1429599048326",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Qué número quieres elevar?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Dime el número base"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿Cuál es la base que quieres elevar?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.320446398650.1103889970872",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿A qué potencia quieres elevar el número base?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Dime el exponente"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿A qué exponente quieres elevar la base?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.330189441918.1392833838840",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Cuál es el número del que quieres el factorial?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Dime el número para calcular su factorial"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿De qué número quieres calcular el factorial?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1078468102798.1350648669685",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿De qué número deseas calcular el logaritmo natural?"
+                    }
+                ]
+            }
+        ]
+    }
+}
